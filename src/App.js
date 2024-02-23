@@ -23,4 +23,3 @@ function App() {
 }
 
 export default App;
-// style={{display: "block", marginBottom: "10px" }}
