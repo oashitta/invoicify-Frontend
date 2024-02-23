@@ -2,6 +2,8 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import '../css/Homepage.css'
 
+// This function will probably change to header as it contains the login logout buttons. 
+
 function Homepage() {
 
   const { loginWithPopup, loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
