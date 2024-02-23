@@ -18,8 +18,3 @@ root.render(
     </Auth0Provider>
   </React.StrictMode>
 );
-
-// authorizationParams={{
-      //   redirect_uri: window.location.origin,
-      //   audience: process.env.REACT_APP_AUTH0_AUDIENCE,
-      // }}
