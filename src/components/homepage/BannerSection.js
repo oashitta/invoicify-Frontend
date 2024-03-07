@@ -10,8 +10,8 @@ const BannerSection = () => {
 
   return (
     <section className="banner-section">
-      <div className="row d-flex justify-content-between align-items-center mt-5">
-        <div className="col-md-6">
+      <div className="row d-flex justify-content-center align-items-center mt-5">
+        <div className="col-md-6 col-sm-12">
           <h1 className="text-capitalize">
             Simplify your invoice management with billify
           </h1>
@@ -33,12 +33,14 @@ const BannerSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-md-auto">
+        <div className="col-md-auto col-sm-12 mt-5">
+          {' '}
+          {/* col-md-auto for larger screens and col-sm-12 for smaller screens */}
           <img
             className="img-fluid"
             src="/images/banner-image.jpg"
             alt="Woman holding a paper"
-            style={{ width: '500px', height: '600px' }}
+            style={{ maxWidth: '100%', height: 'auto' }} // Ensure the image is responsive
           />
         </div>
       </div>
