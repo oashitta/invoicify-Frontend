@@ -6,7 +6,9 @@ const LandingPage = () => {
   return (
     <div className="container-fluid landing-page">
       <NavSection />
-      <BannerSection />
+      <div className="banner-container">
+        <BannerSection />
+      </div>
     </div>
   )
 }

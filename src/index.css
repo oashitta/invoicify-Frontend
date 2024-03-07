@@ -5,13 +5,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.landing-page {
-  height: 100vh;
-  overflow: hidden;
+.btn-login,
+.btn-more {
+  border-radius: 0; /* Remove border radius */
 }
-/* .banner-section {
-  margin: 3rem 0;
-} */
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
 .logo {
   font-weight: 700;
   font-size: 2rem;

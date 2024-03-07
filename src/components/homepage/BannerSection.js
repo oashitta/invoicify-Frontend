@@ -9,40 +9,41 @@ const BannerSection = () => {
   }
 
   return (
-    <section className="banner-section">
-      <div className="row d-flex justify-content-center align-items-center mt-5">
-        <div className="col-md-6 col-sm-12">
-          <h1 className="text-capitalize">
-            Simplify your invoice management with billify
-          </h1>
+    <section className="banner-section text-center">
+      <div className="row d-flex align-items-center justify-content-center">
+        <div className="col-md-4 col-sm-12">
+          <span className="material-symbols-outlined fs-1">deployed_code</span>
+          <h1 className="text-capitalize">Sign Up for Billify Today</h1>
+          <p>Create an account and start managing youur invoices.</p>
+        </div>
+        <div className="col-md-4 col-sm-12">
+          <span className="material-symbols-outlined fs-1">deployed_code</span>
+          <h1 className="text-capitalize">Effortlesly Manage Your Invoices</h1>
           <p>
-            Billify is the ultimate solution for managing your invoices
-            efficiently. Streamline your invoicing process, save time, and get
-            paid faster.
+            Track, organize, and send invoices with ease using Billify's
+            intuitive interface.
           </p>
-          <div className="d-flex">
-            <button
-              type="button"
-              className="btn btn-login me-2"
-              onClick={handleGetStartedClick}
-            >
-              Get Started
-            </button>
-            <button type="button" className="btn btn-more">
-              Learn More
-            </button>
-          </div>
         </div>
-        <div className="col-md-auto col-sm-12 mt-5">
-          {' '}
-          {/* col-md-auto for larger screens and col-sm-12 for smaller screens */}
-          <img
-            className="img-fluid"
-            src="/images/banner-image.jpg"
-            alt="Woman holding a paper"
-            style={{ maxWidth: '100%', height: 'auto' }} // Ensure the image is responsive
-          />
+        <div className="col-md-4 col-sm-12">
+          <span className="material-symbols-outlined fs-1">deployed_code</span>
+          <h1 className="text-capitalize">Stay on top of payments</h1>
+          <p>
+            Receive notifications and reminders to ensure timely payments from
+            your clients.
+          </p>
         </div>
+      </div>
+      <div className="d-flex align-items-center justify-content-center mt-5">
+        <button
+          type="button"
+          className="btn btn-login me-2"
+          onClick={handleGetStartedClick}
+        >
+          Get Started
+        </button>
+        <button type="button" className="btn btn-more">
+          Learn More
+        </button>
       </div>
     </section>
   )
