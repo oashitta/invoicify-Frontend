@@ -11,12 +11,14 @@ const BannerSection = () => {
   return (
     <section className="banner-section text-center">
       <div className="row d-flex align-items-center justify-content-center">
-        <div className="col-md-4 col-sm-12">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-5">
           <span className="material-symbols-outlined fs-1">deployed_code</span>
           <h1 className="text-capitalize">Sign Up for Billify Today</h1>
           <p>Create an account and start managing youur invoices.</p>
         </div>
-        <div className="col-md-4 col-sm-12">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-5">
+          {' '}
+          {/* Add col-lg-4 and col-md-6 for responsive behavior */}
           <span className="material-symbols-outlined fs-1">deployed_code</span>
           <h1 className="text-capitalize">Effortlesly Manage Your Invoices</h1>
           <p>
@@ -24,7 +26,9 @@ const BannerSection = () => {
             intuitive interface.
           </p>
         </div>
-        <div className="col-md-4 col-sm-12">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-5">
+          {' '}
+          {/* Add col-lg-4 and col-md-6 for responsive behavior */}
           <span className="material-symbols-outlined fs-1">deployed_code</span>
           <h1 className="text-capitalize">Stay on top of payments</h1>
           <p>

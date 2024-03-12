@@ -1,5 +1,6 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom'
 
 const NavSection = () => {
   const { loginWithRedirect } = useAuth0()
@@ -14,9 +15,13 @@ const NavSection = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand logo" href="#">
-          Billify
-        </a>
+        <Link to="/" className="navbar-brand">
+          <img
+            src="/images/logo.png"
+            alt="Billify Logo"
+            style={{ width: '100px', height: 'auto' }}
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
