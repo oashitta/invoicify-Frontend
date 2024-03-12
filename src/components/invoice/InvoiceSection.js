@@ -1,14 +1,14 @@
 import React from 'react'
 
-const WelcomeSection = () => {
+const InvoiceSection = () => {
   return (
     <div
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: '100vh' }}
     >
-      <h1>Welcome to Billify</h1>
+      <h1>This is the Invoice Page</h1>
     </div>
   )
 }
 
-export default WelcomeSection
+export default InvoiceSection

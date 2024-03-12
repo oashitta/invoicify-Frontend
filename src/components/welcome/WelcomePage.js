@@ -1,11 +1,12 @@
 import React from 'react'
-import NavWelcomeSection from './NavWelcomeSection'
+import Layout from '../Layout'
+import WelcomeSection from './WelcomeSection'
 
 const WelcomePage = () => {
   return (
-    <div className="container-fluid landing-page">
-      <NavWelcomeSection />
-    </div>
+    <Layout>
+      <WelcomeSection />
+    </Layout>
   )
 }
 

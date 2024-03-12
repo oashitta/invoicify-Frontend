@@ -1,8 +1,9 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom' // Import Link from React Router
 
 const NavWelcomeSection = () => {
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
+  const { logout, isAuthenticated, user } = useAuth0()
 
   const handleSignOut = () => {
     logout({ returnTo: window.location.origin })
@@ -11,9 +12,9 @@ const NavWelcomeSection = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand logo" href="#">
+        <Link to="/" className="navbar-brand logo">
           Billify
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,48 +28,25 @@ const NavWelcomeSection = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Invoice Management
-              </a>
+            <li className="nav-item ms-4">
+              <Link to="/invoice" className="nav-link">
+                Invoices
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Create Invoice
-              </a>
+            <li className="nav-item ms-4">
+              <Link to="/estimates" className="nav-link">
+                Estimates
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Manage Invoice
-              </a>
+            <li className="nav-item ms-4">
+              <Link to="/quotes" className="nav-link">
+                Quotes
+              </Link>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More Options
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+            <li className="nav-item ms-4">
+              <Link to="/bills" className="nav-link">
+                Bills
+              </Link>
             </li>
           </ul>
           <div className="d-flex">
