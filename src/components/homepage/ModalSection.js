@@ -1,5 +1,6 @@
 import React from 'react'
 import ResendVerificationEmail from './ResendVerificationEmail'
+import { Link } from 'react-router-dom'
 
 const ModalSection = ({ errorMessage, onClose }) => {
   return (
@@ -15,9 +16,14 @@ const ModalSection = ({ errorMessage, onClose }) => {
             ></button>
           </div>
           <div className="modal-body">
-            <p>{errorMessage}</p>
+            <p>
+              {errorMessage} or email <Link>support@billify.ca</Link>
+            </p>
+
             {/* Render the ResendVerificationEmail component */}
-            <ResendVerificationEmail />
+            <Link>
+              <ResendVerificationEmail />
+            </Link>
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-login" onClick={onClose}>
