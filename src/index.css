@@ -1,13 +1,101 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0px auto;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-login,
+.btn-more {
+  border-radius: 0; /* Remove border radius */
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.btn-login {
+  background: black;
+  color: white;
+}
+.btn-more {
+  border: 2px solid black;
+}
+
+/* Modal section */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close-button {
+  margin-top: 20px;
+}
+
+/* List items */
+
+.custom-list-group {
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 0;
+}
+
+.custom-link {
+  color: black;
+  text-decoration: none;
+}
+
+li.list-group-item:hover {
+  background: black;
+  color: #f0f0f0;
+  text-emphasis-color: #f0f0f0;
+}
+
+li.list-group-item:active {
+  background: black;
+  color: #f0f0f0;
+}
+
+.custom-link {
+  color: black;
+  line-height: 2.5;
+}
+
+.custom-link:hover {
+  color: #f0f0f0;
+}
+
+.nav-link {
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.nav-link:hover {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
